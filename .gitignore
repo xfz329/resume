@@ -35,3 +35,9 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# latex temp files
+*.aux
+*.fdb_latexmk
+*.fls
+*.xdv

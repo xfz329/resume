@@ -11,104 +11,122 @@
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{江涛}
+\name{江锋}
 
 % {E-mail}{mobilephone}{homepage}
 % be careful of _ in emaill address
-\contactInfo{(+86) 132-6029-9910}{hijiangtao@gmail.com}{Web前端研发工程师}{GitHub @hijiangtao}
+\contactInfo{医学信号分析处理}{159-6715-7216}{silencejiang@zju.edu.cn}{GitHub @xfz329}
 % {E-mail}{mobilephone}
 % keep the last empty braces!
 %\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
- 
-\section{个人总结}
-本人在校成绩优秀、乐观向上，工作负责、自我驱动力强、热爱尝试新事物，认同开放、连接、共享的Web在未来的不可替代性。在校期间长期从事可视分析(Web的2D/3D时空可视化)相关研究，对Web技术发展趋势及前端工程化解决方案有浓厚兴趣。\textbf{现任职于阿里巴巴集团。}
+
+% \section{}
+% \datedsubsection{\textbf{}, }{2018.11-2019.1}
+% \begin{itemize}
+%     \item 
+%     \item 
+% \end{itemize}
 
 % \section{\faGraduationCap\ 教育背景}
 \section{教育背景}
-\datedsubsection{\textbf{中国科学院大学},计算机应用技术,\textit{在读硕士研究生}}{2015.9 - 2018.6}
-\ \textbf{排名11/133(前10\%)},中国科学院大学学业奖学金(2次),IEEE Student member,预计2018年6月毕业
-\datedsubsection{\textbf{北京理工大学},软件工程,\textit{工学学士}}{2011.9 - 2015.6}
-\ \textbf{排名2/62(前5\%)},国家励志奖学金,人民奖学金(7次),科技竞赛奖(2次),北京市普通高等学校优秀毕业生,北京理工大学优秀毕业生,软件学院金牌毕业生,优秀团员/优秀学生(5次)
-\datedsubsection{\textbf{荷兰 莱顿大学},计算机科学与技术,\textit{国家留学基金委公派交换生}}{2015.3 - 2015.5}
-\ 2014年中国政府奖学金(\textit{http://www.csc.edu.cn/}),DID-ACTE项目交换生(\textit{http://did-acte.org/})
+\datedsubsection{\textbf{浙江大学},生物医学工程专业,嵌入式及人体电生理信号处理方向,\textit{硕博连读}}{2015.09-2023.06}
+\begin{itemize}
+    \item \textbf{主修课程:}生物医学工程方法学、数字图像处理、生物医学信号处理、微机系统设计与开发、现代医学仪器、
+    生物医学仪器的嵌入式软件等
+    \item \textbf{获得荣誉:}优秀博士岗位助学金,优秀研究生,三好研究生；生仪学院优秀学生党支部书记,优秀研究生干部
+\end{itemize}
+\datedsubsection{\textbf{大连理工大学},生物医学工程专业,\textit{本科}}{2010.09-2014.06}
+\begin{itemize}
+    \item \textbf{主修课程:}模拟电路基础、数字电路基础、C语言、数据结构、通信原理、数字信号处理、微机原理、医学成
+    像技术与图像处理、医学信号分析与处理等
+    \item \textbf{获得荣誉:}全国首届生物医学电子创新设计大赛自选项目组二等奖,2014年8月
+\end{itemize}
 
-% \section{\faCogs\ IT 技能}
+\section{项目经历}
+\datedsubsection{\textbf{临床麻醉深度评估指标PK值的研究}}{2023.01-2023.09}
+\textbf{项目介绍:}改进了广泛使用的临床麻醉指标值PK值(\textit{Measuring the Performance of Anesthetic Depth Indicators},W D.Smith,Anesthesiology,IF=8.8,Cites=582)的计算方式，
+分别开发了R语言与Python的软件包,得到了原作者的授权与肯定
+\begin{itemize}
+    \item 基于R语言,完成了PK计算软件包pk4adi的开发,2023年7月已被R语言官方仓库CRAN收录
+    \item 基于Python,分别完成了PK计算软件的CLI版本(pk4adi)与GUI版本(pk4adi\_calculator)的开发,GUI版本支持选择文件一次性评估比较多个参数，两者均已在Github上开源
+    \item 工作内容与成果得到原作者的授权与高度肯定,相关成果整理投稿中
+\end{itemize}
+\datedsubsection{\textbf{基于光电容积脉搏波PPG的子痫前期PE识别模型的研究},博士毕业论文课题}{2017.09-2022.12}
+\textbf{项目介绍:}在临床PE患者与正常孕妇人群PPG数据的基础上,探索分析PE对PPG波形的影响与借助PPG波形识别PE的可能性;
+设计了多种PPG时域形态学特征参数;通过机器学习的方法,建立了具有一定识别效果的PE识别模型;设计并实现了模块化的PE识别分析的综合软件系统
+\begin{itemize}
+  \item 与临床医生合作,完成基本数据的采集工作
+  \item 基于Qt,完成了实验室自研多生路生理信号采集设备的上位机软件研发,具有USB数据通讯、数据保存、实时绘图等功能
+  \item 提出了一种新型PPG波形检测算法SCD,可依据信号质量进行定制,相较其他算法而言,对包含异常PPG波形的检测准确率具有性能优势
+  \item 提出了多种PPG新型形态学时域特征,构建了PPG波形的描述特征参数集合
+  \item 基于Sklearn,使用多种机器学习算法构建了PE识别模型,经测试,所得模型具有一定的PE识别能力
+  \item 设计并实现了模块化的PE识别分析的综合软件系统,包括基于Java的数据与处理模块、基于Java的跨平台(PC与Android)客户端模块、基于Sklearn的PE识别模型训练模块与
+  基于Django的云服务器等模块,经测试,可按预期正常运行,具有一定的应用前景
+  \item 目前已完成\textbf{4}篇文章的发表，\textbf{1}篇SCI在投中，另有\textbf{1}篇文章整理撰写中
+\end{itemize}
+\datedsubsection{\textbf{基于人体心冲击图BCG的智能睡眠床垫系统的研发}}{2016.01-2016.10}
+\textbf{项目介绍:}设计集成于智能床垫的能够采集BCG的嵌入式微机采集系统，采集受试者的ECG与BCG睡眠数据,并以此分
+析受试者的睡眠状况
+\begin{itemize}
+  \item 负责基于STM32F411芯片的ECG与BCG两路生理信号采集系统的嵌入式软件设计
+  \item 负责系统串口通讯协议设计与现实,完成TF卡本地存储及串口发送等数据保存与通讯功能
+  \item 负责两路电生理信号的预处理,对两路信号的一致性进行了验证
+\end{itemize}
+
+\section{实习经历}
+\datedsubsection{\textbf{浙江省杭州市特种设备检测研究院},软件开发工程师}{2019.04-2019.06}
+\begin{itemize}
+    \item 基于百度的OCR云技术,完成了针对特种材料焊接工艺评定及焊接操作人员资质解读的Android软件开发
+    \item 可选择相机或直接对本地图片中资质信息进行解读,提供资质代号信息的自然语言翻译,提供人工校正功能
+    \item 以Android设备的网卡地址信息为基础,实现了软件使用权限的申请管理,保证了软件使用范围的可控性
+\end{itemize}
+\datedsubsection{\textbf{浙江雅锐斯智能科技有限公司},软件开发工程师}{2018.11-2019.01}
+\begin{itemize}
+    \item 使用Java/Servlet开发了收发HTTP访问请求并操作可编程逻辑控制器PLC的中间应用服务程序
+    \item 软件接收请求命令,通过FINS协议访问操作PLC设备,转发PLC执行结果至HTTP请求端
+    \item 已在公司全自动中药配方颗粒调剂系统、智能实时打印贴标机等产品上正式投入使用
+\end{itemize}
+\datedsubsection{\textbf{浙江千成电子科技有限公司},软件开发工程师}{2015.04-2015.09}
+\begin{itemize}
+    \item 负责公司单道动态心电记录仪的低功耗蓝牙BLE通讯模块的嵌入式软件设计
+    \item 负责公司Android端APP的设计开发,实现了与单通道心电记录仪的BLE通讯,具有心电数据的实时显示、数
+    据转存、基本心电事件检测分析等功能
+\end{itemize}
+
+\section{科研成果}
+\textbf{SCI}
+\begin{itemize}
+  \item \textit{A novel parameter derived from photoplethysmographic pulse wave to distinguish preeclampsiafrom
+  non-preeclampsia},Pregnancy Hypertension:An International Journal of Women's Cardiovascular Health,IF=2.49,2019 
+  \item \textit{Distinguishing preeclampsia using the falling scaled slope(FSS), a novel photoplethysmographic morphological parameter},
+  Hypertension in Pregnancy,IF=2.00,2023 
+\end{itemize}
+\textbf{EI}
+\begin{itemize}
+  \item \textit{The Research of Photoplethysmography Morphology: Distincting Preeclampsia with Hierarchical Area Ratio},
+  2018 The 3rd International Conference on Information Communication and Signal Processing of IEEE,2018 
+  \item \textit{一种基于新型检测算法的模块化的脉搏波预处理分析系统的设计与实现},《生物医学工程学杂志》,2023 
+\end{itemize}
+
 \section{技术能力}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.2ex]
-  \item \textbf{编程语言}: JavaScript (ECMAScript, Node.js), HTML/CSS, Python, Go, SQL, C, Shell
-  \item \textbf{操作系统,数据库与工程构建}: Linux/macOS/MySQL/MongoDB/Git/webpack/Progressive Web App
-  \item \textbf{关键词}: React/Vue.js/D3.js(SVG)/three.js(canvas, WebGL)/chrome extension/Express
+  \item \textbf{算法:} 熟悉树、图、栈等常见数据结构的基本算法,熟悉信号处理方向的常见算法,熟悉机器学习的常见算法,熟悉机器学习的Sklearn算法包的使用
+  \item \textbf{编程语言:} 熟悉Matlab,Java/Android,C/C++,Shell/Makefile,Python,R等编程语言
+  \item \textbf{嵌入式开发:} 具有 ARM LPC1700、STM32F 系列等芯片的开发经验,熟悉串口、蓝牙、USB等通讯软件的开发
+流程, 有在此基础上自定义通讯协议的开发设计经验
+  \item \textbf{操作系统:} 熟悉Linux,熟悉操作系统的相关概念,熟悉嵌入式实时系统μCOS
+  \item \textbf{工程构建:} 熟悉Design Pattern相关原理,熟悉Git与Github
+  \item \textbf{写作能力:} 扎实的中英文写作能力,良好的技术文档写作能力,良好的编码写作习惯
+  \item \textbf{外语能力:} 熟练的英文文献与技术文档阅读能力,CET6
 \end{itemize}
 
-% \end{itemize}
-
-\section{实习经历}
-\datedsubsection{\textbf{阿里巴巴集团 | Alibaba}, 前端开发工程师}{2017.6-2017.9}
-\begin{itemize}
-%   \item 飞猪北京前端团队全面负责各交通线的票务(机票/火车票/汽车票) web 应用与事业群基础架构研发
-  \item 独立负责车站地图开发(React),通过HTML5 本地存储及JSBridge实现在阿里全系应用中发布上线
-  \item 独立负责BU SPM chrome插件开发,支付成功/订单详情等页面的开发与交叉营销的接入工作
-\end{itemize}
-
-\datedsubsection{\textbf{北京腾云天下科技有限公司 | TalkingData},数据挖掘与可视化工程师}{2015.11-2017.5}
-\begin{itemize}
-  \item \textbf{利用海量用户定位数据，对城市空间及人群移动特征进行研究。}第一个课题是基于香农熵和人群出行模式，构建城市网格与用户矩阵分析城市多样性/流动性分布；可视分析平台前端与可视化基于D3/Vue/Express开发，数据分析与存储采用Python/MySQL/MongoDB技术，为了均衡大数据情况下的页面可视化渲染消耗用canvas替代svg。第二个课题是对海量商场定位数据做人群分类与可视化查询，依据该系统撰写的论文被CIKM 2016(DAVA Workshop)录用，并收录于中科院软件所年会成果集
-  \item 负责数据科学部HQ LAB的可视化原型开发，主导 TalkingMind 平台系统设计与前端开发
-\end{itemize}
-
-\datedsubsection{\textbf{北京格灵深瞳信息技术有限公司 | DeepGlint},Web开发工程师}{2015.7-2015.9}
-\begin{itemize}
-  \item \textbf{独立负责MUSE部门的可视化组件研发。}与平台研发、设计协作完成 DeepGlint Developer 平台可视化图表组件的集成开发，符合完全定制化渲染、响应式布局与实时更新等特点
-  \item 利用 D3+Vue+WebGL(Three.js) 尝试实现三维空间的人群移动可视化
-\end{itemize}
-
-% \begin{onehalfspacing}
-% \end{onehalfspacing}
-
-% \datedsubsection{\textbf{DID-ACTE} 荷兰莱顿}{2015年3月 - 2015年6月}
-% \role{本科毕业设计}{LIACS 交换生}
-% 利用结巴分词对中国古文进行分词与词性标注，用已有领域知识训练形成 classifier 并对结果进行调优
-% \begin{onehalfspacing}
-% \begin{itemize}
-%   \item 利用结巴分词对中国古文进行分词与词性标注
-%   \item 利用已有领域知识训练形成 classifier, 并用分词结果进行测试反馈
-%   \item 尝试不同规则，对 classifier 进行调优
-% \end{itemize}
-% \end{onehalfspacing}
-
-\section{竞赛获奖/项目作品}
-% increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.2ex]
-%   \item LeetCodeOJ Solutions, \textit{https://github.com/hijiangtao/LeetCodeOJ}
-  \item 第三届中国软件杯大学生软件设计大赛\textbf{全国一等奖}( \textit{http://www.cnsoftbei.com/} ),2014 年8月
-  \item 中国机器人大赛创意设计大赛\textbf{全国特等奖}( \textit{http://www.rcccaa.org/} ),2013年8月
-%   \item 中国机器人大赛暨Robocup公开赛(武术擂台赛)全国一等奖,2013年10月
-  \item 第11届北京理工大学“世纪杯”竞赛学生课外科技作品竞赛\textbf{特等奖},2013年8月
-  \item VIS Components for security system, \textit{https://hijiangtao.github.io/ss-vis-component/}
-  \item 个人博客：\textit{https://hijiangtao.github.io/}，更多作品见 \textit{https://github.com/hijiangtao}
-%   \item 电视节目"爸爸去哪儿"可视化分析展示, \textit{https://hijiangtao.github.io/variety-show-hot-spot-vis/}
-\end{itemize}
-
-% \section{\faHeartO\ 项目/作品摘要}
-% \section{项目/作品摘要}
-% \datedline{\textit{An Integrated Version of Security Monitor Vis System}, https://hijiangtao.github.io/ss-vis-component/ }{}
-% \datedline{\textit{Dark-Tech}, https://github.com/hijiangtao/dark-tech/ }{}
-% \datedline{\textit{融合社交网络数据挖掘的电视节目可视化分析系统}, https://hijiangtao.github.io/variety-show-hot-spot-vis/}{}
-% \datedline{\textit{LeetCodeOJ Solutions}, https://github.com/hijiangtao/LeetCodeOJ}{}
-% \datedline{\textit{Info-Vis}, https://github.com/ISCAS-VIS/infovis-ucas}{}
-
-
-% \section{\faInfo\ 社会实践/其他}
-\section{社区参与/实践其他}
-% increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.2ex]
-  \item 乐于参与开源社区讨论,\textbf{参与翻译 Vue.js, webpack, WebAssembly, Babel 文档，印记中文成员}
-  \item 中国科学院大学2016秋季学期可视化与可视分析课程助教，\textit{http://vis.ios.ac.cn/infovis-ucas/}
-  \item 未来论坛学生会成员、北理社联新闻信息中心主任、北理工软件学院学生会宣传部副部长(2012-2016)
-  \item 2013-2015 北京市共青团“温暖衣冬”志愿者,第九届园博会志愿者,2014 FLL机器人世锦赛志愿者
-\end{itemize}
-
+\section{个人总结}
+本人在校期间成绩优秀,乐观向上,工作负责,自我驱动能力强,热爱尝试新事物,学习能力强。在校期间由于
+科研需要与兴趣驱动,一直从事人体电生理信号的研究相关工作,熟悉相关信号的基本产生采集原理,熟悉嵌入
+式软件的设计及上位机软件的基本开发流程,熟悉基本包括Uart、BT、BLE、USB等电子电路的相关通讯协议的
+原理及基本通讯软件的研发,熟悉生物医学信号处理的基本流程。看好医疗健康领域的发展趋势并有志于投身医
+疗健康仪器设备的开发设计的关系国计民生的事业中
 %% Reference
 %\newpage
 %\bibliographystyle{IEEETran}
